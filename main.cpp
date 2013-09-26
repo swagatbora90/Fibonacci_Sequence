@@ -25,4 +25,6 @@ while(!getchar())
   }
 
 cout<<"\n Thank you for your time..Have a good day";
+
+return 0;
 }
