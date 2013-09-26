@@ -1,4 +1,6 @@
 #include<iostream>
+#include<conio.h>
+#include<windows.h>
 using namespace std;
 
 int main()
@@ -14,7 +16,7 @@ cout<<endl<<firstNo;
 sleep(1000);
 cout<<endl<<secNo;
 sleep(1000);
-while(!getchar())
+while(!getch())
   {
   sum=firstNo+secNo;
   cout<<endl<<sum;
