@@ -6,27 +6,32 @@ using namespace std;
 int main()
 {
 cout<<"\nThis is a program to print the fibonacci sequence";
-cout<<"\n The printing stops when the user inputs any key";
+cout<<"\nThe printing stops when the user inputs any key";
+cout<<endl<<endl<<"press any key to exit";
 
 long int firstNo = 1;
 long int secNo =1;
 long int sum=0;
 
 cout<<endl<<firstNo;
-sleep(1000);
+Sleep(1000);
 cout<<endl<<secNo;
-sleep(1000);
-while(!getch())
+Sleep(1000);
+//cout<<endl<<"press X to exit";
+
+while(!kbhit())
   {
   sum=firstNo+secNo;
   cout<<endl<<sum;
   firstNo=secNo;
   secNo=sum;
-  sleep(1000);
+  Sleep(1000);
+ 
   
   }
 
 cout<<"\n Thank you for your time..Have a good day";
-
+getch();
 return 0;
 }
+
